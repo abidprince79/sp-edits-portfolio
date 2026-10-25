@@ -14,10 +14,42 @@
 .reels-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}.reel-card{overflow:hidden;border:1px solid #ffffff20;border-radius:20px;background:#11111a}.reel-screen{position:relative;aspect-ratio:9/16;background:#101019}.reel-screen video{width:100%;height:100%;object-fit:cover;display:block}.reel-label{position:absolute;top:10px;left:10px;padding:6px 9px;border-radius:999px;background:#08080dcc;color:#fff;font-size:10px}.reel-info{padding:13px}.reel-info h3{font-size:14px;margin:0 0 6px}.reel-info p{font-size:11px;line-height:1.6;color:#aaa2b9;margin:0}
 .recent-work{position:relative}.chat-grid{display:flex;gap:18px;overflow-x:auto;scroll-snap-type:x mandatory;padding:5px 3px 20px;scrollbar-width:thin;scrollbar-color:#7c3aed #171721}.chat-card{flex:0 0 clamp(260px,28%,330px);aspect-ratio:9/16;display:flex;flex-direction:column;overflow:hidden;border:1px solid #ffffff20;border-radius:22px;background:#0b1412;box-shadow:0 16px 45px #0004;scroll-snap-align:start}.chat-top{display:flex;align-items:center;gap:11px;padding:15px;background:#132d25;border-bottom:1px solid #ffffff12}.chat-avatar{width:42px;height:42px;border-radius:50%;display:grid;place-items:center;background:#8b5cf6;color:white;font-weight:800;font-size:13px;flex-shrink:0}.chat-avatar.teal{background:#0e9f91}.chat-avatar.amber{background:#b7791f}.chat-avatar.pink{background:#be5586}.chat-top strong{display:block;font-size:13px}.chat-top small{display:block;color:#a6c6b8;font-size:10px;margin-top:3px}.chat-badge{margin-left:auto;max-width:110px;text-align:right;color:#a6c6b8;font-size:9px;line-height:1.4}.chat-body{padding:17px 13px;display:flex;flex-direction:column;gap:9px;background:#0b1915}.bubble{max-width:88%;padding:10px 12px;border-radius:12px;font-size:12px;line-height:1.55}.bubble.incoming{align-self:flex-start;background:#1b342c;color:#e8f5ed;border-top-left-radius:3px}.bubble.outgoing{align-self:flex-end;background:#174c3c;color:#effff5;border-top-right-radius:3px}.chat-foot{padding:10px 14px;border-top:1px solid #ffffff12;color:#a8c7b8;font-size:10px}
 @media(max-width:800px){.reels-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.chat-grid{grid-template-columns:1fr}}
+
+/* Premium navy, violet and warm-orange portfolio refresh */
+:root{--site-primary:#7c3aed;--site-secondary:#06b6d4;--site-background:#050b1b;--site-on-primary:#fff;--site-on-secondary:#fff;--site-on-background:#f5f7ff}
+html{scroll-behavior:smooth;background:#050b1b}
+body{background:radial-gradient(ellipse at 8% 5%,#312e8130,transparent 36%),radial-gradient(ellipse at 95% 25%,#7c3aed20,transparent 32%),linear-gradient(135deg,#050b1b 0%,#080e22 52%,#07131e 100%);color:#f5f7ff}
+.wrap{width:min(1160px,calc(100% - 40px))}
+.nav{min-height:86px;border-bottom:1px solid #a5b4fc20;gap:22px}
+.brand.profile-brand{display:flex;align-items:center;gap:12px;text-decoration:none;white-space:nowrap;font-size:inherit;letter-spacing:normal}
+.profile-avatar{width:58px;height:58px;object-fit:cover;object-position:center 35%;border-radius:50%;border:2px solid #a78bfa;box-shadow:0 0 22px #8b5cf64d}
+.profile-name{display:flex;flex-direction:column;font-weight:800;font-size:17px;line-height:1.25;color:#fff}
+.profile-name small{font-size:10px;font-weight:500;color:#b9c7e9;letter-spacing:.02em;margin-top:4px}
+.navlinks a{color:#d3dcf6}.navlinks a:hover,.navlinks a:focus{color:#c4b5fd}
+.pill{border:1px solid #a78bfa55;background:#111a36;color:#e9e5ff}
+.dot{background:#34d399;box-shadow:0 0 12px #34d399}
+.hero{padding-top:78px;padding-bottom:86px;position:relative}
+.glow{background:radial-gradient(circle,#7c3aed35,transparent 70%);filter:blur(12px)}
+.eyebrow{color:#c4b5fd;letter-spacing:.15em}
+h1 em,.hero h1 em{background:linear-gradient(90deg,#a78bfa,#fb923c);-webkit-background-clip:text;background-clip:text;color:transparent}
+h1,h2,h3{color:#f8faff}
+.lead,.about-copy p,.section-head p{color:#b7c4e2}
+.btn{border:1px solid #7f8dbb55;background:#101a35;color:#eef2ff}
+.btn.primary{background:linear-gradient(110deg,#7c3aed,#a855f7 55%,#f97316);border:0;box-shadow:0 8px 30px #7c3aed35}
+.stat,.about-card,.service,.project,.chat-card,.contact{background:linear-gradient(145deg,#101a35dd,#0a1329f2);border-color:#a5b4fc24}
+.stat strong{color:#fff}.stat span{color:#aab8dc}
+section{scroll-margin-top:95px}
+.project,.service{border:1px solid #a5b4fc25;box-shadow:0 14px 38px #0002}
+.project:hover,.service:hover{border-color:#a78bfa88;transform:translateY(-3px)}
+.skills span{background:#151e3a;border:1px solid #8b5cf644;color:#dcd6ff}
+.about-card{border:1px solid #a78bfa55;box-shadow:0 0 45px #7c3aed12}
+.footer{border-top:1px solid #a5b4fc25;color:#aab8dc}
+@media(max-width:700px){.nav{flex-wrap:wrap;padding-top:14px;padding-bottom:14px}.profile-avatar{width:50px;height:50px}.profile-name{font-size:15px}.hero{padding-top:52px;padding-bottom:58px}.wrap{width:min(100% - 28px,1160px)}}
+
 </style>
 </head>
 <body><div class="root">
-<header class="wrap nav"><a class="brand" href="#home">SP<span>.</span> EDITS</a><nav class="navlinks"><a href="#work">Work</a><a href="#recent-work">Recent Work</a><a href="#services">Services</a><a href="#about">About</a><a href="#contact">Contact</a></nav><a class="pill" href="#contact"><span class="dot"></span> Available for projects</a></header>
+<header class="wrap nav"><a class="brand profile-brand" href="#home"><img class="profile-avatar" src="assets/profile.jpg" alt="Abid Prince profile photo"><span class="profile-name">Abid Prince<small>Video Editor &amp; Creative Designer</small></span></a><nav class="navlinks"><a href="#work">Work</a><a href="#recent-work">Recent Work</a><a href="#services">Services</a><a href="#about">About</a><a href="#contact">Contact</a></nav><a class="pill" href="#contact"><span class="dot"></span> Available for projects</a></header>
 <main>
 <section class="wrap hero" id="home"><div class="glow"></div><div class="eyebrow">SP. EDITS · Video Editor & Visual Storyteller</div><h1>Your vision,<br>edited with <em>purpose.</em></h1><p class="lead">I’m Abid Prince, a video editor with 3+ years of experience creating engaging reels, cinematic edits, promotional videos, wedding films and creator content. Clean storytelling, thoughtful pacing and polished visuals—built around your vision.</p><div class="actions"><a class="btn primary" href="#work">Explore my work ↗</a><a class="btn" href="https://wa.me/8801804126884" target="_blank" rel="noreferrer">Discuss a project ↗</a></div><div class="stats"><div class="stat"><strong>3+ Years</strong><span>Editing experience</span></div><div class="stat"><strong>8 Services</strong><span>Creative video solutions</span></div><div class="stat"><strong>CapCut Pro · Adobe Premiere Pro</strong><span>All AI Resource</span></div></div></section>
 <section class="wrap" id="work"><div class="section-head"><div><div class="eyebrow">Selected projects</div><h2>My video portfolio.</h2></div><p>A selection of real edits by Abid Prince. Open each video to watch the full project.</p></div><div class="projects">
